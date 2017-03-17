@@ -1,0 +1,13 @@
+<%- include head.ejs %>
+  <div class="col-12">
+
+
+   <h4 class="mt-4 text-center"><%= post.title %> </h4>
+   <div class="text-center text-muted mt-2"><small>作者：<%= post.name %>&nbsp;&nbsp;&nbsp;&nbsp;时间：<%= post.time.minute %>&nbsp;&nbsp;&nbsp;&nbsp;标签：<%= post.tags %></small>   </div>
+   <div class="mt-4" style="text-indent: 2em;">
+       <%=post.post %>
+   </div>
+
+
+  </div>
+<%- include footer.ejs %>

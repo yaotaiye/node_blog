@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="/css/bootstrap.min.css" >
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js" ></script>
+</head>
+<body >
+<div class="container pb-5" >
+    <div class="row ">
+        <!--页头-->
+        <nav class="col-12 navbar navbar-toggleable-md navbar-light bg-info text-white">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" style="color: #fff;" href="/">NODE.JS个人博客</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                 <!--   <li class="nav-item ">
+                        <a class="nav-link text-white" href="/">文章列表</a>
+                    </li>-->
+                    <li class="nav-item ">
+                        <a class="nav-link text-white" href="/post">文章发布</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="/reg">注册</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="/login">登录</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="/logout">退出</a>
+                    </li>
+
+
+                </ul>
+                <% if (user) { %>
+                  <span style="line-height: 40px; margin-right: 10px;">欢迎您 ,<%= user.name %></span>
+                <% } %>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                    <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+
+            </div>
+        </nav>
+<%- include msg.ejs %>

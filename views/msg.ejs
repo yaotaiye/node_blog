@@ -1,0 +1,15 @@
+<div class="col-12 mt-2">
+    <% if (success) { %>
+    <div class="alert alert-success" role="alert">
+        <strong>成功信息：</strong> <%= success %>
+    </div>
+    <% } %>
+
+    <% if (error) { %>
+    <div class="alert alert-danger" role="alert">
+        <strong>错误信息：</strong> <%= error %>
+    </div>
+    <% } %>
+</div>
+
+

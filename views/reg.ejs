@@ -1,0 +1,27 @@
+<%- include head.ejs %>
+<form method="post"    class="col-12 col-sm-6" style="margin: 40px auto 0">
+        <div class="form-group">
+            <label>用户名</label>
+            <input type="text" name="name" class="form-control"  placeholder="用户名">
+        </div>
+    <div class="form-group">
+        <label>邮箱</label>
+        <input type="email" name="email" class="form-control"  placeholder="请输入邮箱">
+    </div>
+        <div class="form-group">
+            <label >密码</label>
+            <input type="password" name="password" class="form-control"  placeholder="请输入密码">
+        </div>
+        <div class="form-group">
+            <label >确认密码</label>
+            <input type="password" name="repassword" class="form-control"  placeholder="请输入">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputFile">头像</label>
+            <input type="file" id="exampleInputFile">
+            <p class="help-block">请选择头像</p>
+        </div>
+       <input type="submit" class="btn  btn-info btn-block" value="提交">
+</form>
+
+<%- include footer.ejs %>
